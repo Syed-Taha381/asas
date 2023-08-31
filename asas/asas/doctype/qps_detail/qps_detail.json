@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "creation": "2023-08-22 15:52:34.513049",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "section_break_h7ckm",
+  "unitary_imported_material_cost",
+  "column_break_pliiy",
+  "currency_multiplier",
+  "unitary_imported_material_cost_sar",
+  "unitary_imported_x_qty",
+  "column_break_uorq7",
+  "unitary_local_material_cost_sar",
+  "column_break_yipel",
+  "quanity",
+  "uni_local_x_qty",
+  "total_material_cost",
+  "transportation_section",
+  "transport_cost_sealandair",
+  "column_break_l1idv",
+  "tranport_cost_x_handling",
+  "handling",
+  "column_break_wacny",
+  "duty",
+  "column_break_zdvlg",
+  "transport_cost",
+  "section_break_tjq50",
+  "hours",
+  "column_break_lscfc",
+  "men",
+  "column_break_s5fuq",
+  "quantity",
+  "column_break_fzqvt",
+  "sar__hour_rate",
+  "labor_cost",
+  "section_break_5nq6i",
+  "tmc_x_trans_cost",
+  "total_cost",
+  "column_break_dxzxn",
+  "3_mark_up_on_cost_for_contigency",
+  "column_break_td5pm",
+  "2_markup_on_cost_for_finance",
+  "column_break_i2wu6",
+  "_mark_up_on_total_cost",
+  "section_break_ltzim",
+  "mark_up_on_total_cost",
+  "column_break_sb0f4",
+  "total_sales_price",
+  "column_break_mznah",
+  "unit_price"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_h7ckm",
+   "fieldtype": "Section Break",
+   "label": "Material Estimate"
+  },
+  {
+   "fieldname": "unitary_imported_material_cost",
+   "fieldtype": "Currency",
+   "label": "Unitary Imported Material Cost"
+  },
+  {
+   "fieldname": "currency_multiplier",
+   "fieldtype": "Currency",
+   "label": "Currency Multiplier"
+  },
+  {
+   "fieldname": "unitary_local_material_cost_sar",
+   "fieldtype": "Currency",
+   "label": "Unitary Local Material Cost (SAR)"
+  },
+  {
+   "fieldname": "quanity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_pliiy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uorq7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yipel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unitary_imported_material_cost_sar",
+   "fieldtype": "Currency",
+   "label": "Unitary Imported Material Cost (SAR)"
+  },
+  {
+   "fieldname": "transportation_section",
+   "fieldtype": "Section Break",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "transport_cost_sealandair",
+   "fieldtype": "Currency",
+   "label": "Transport cost (sea/land/air)"
+  },
+  {
+   "fieldname": "handling",
+   "fieldtype": "Currency",
+   "label": "Handling"
+  },
+  {
+   "fieldname": "transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport cost"
+  },
+  {
+   "fieldname": "column_break_l1idv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wacny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zdvlg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tjq50",
+   "fieldtype": "Section Break",
+   "label": "Manpower  Estimate"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "men",
+   "fieldtype": "Float",
+   "label": "Men #"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "sar__hour_rate",
+   "fieldtype": "Currency",
+   "label": "SAR / Hour (Rate)"
+  },
+  {
+   "fieldname": "column_break_lscfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_s5fuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fzqvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5nq6i",
+   "fieldtype": "Section Break",
+   "label": "Sales price calculation"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total cost"
+  },
+  {
+   "fieldname": "column_break_dxzxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "3_mark_up_on_cost_for_contigency",
+   "fieldtype": "Percent",
+   "label": "3% mark up on cost for contigency"
+  },
+  {
+   "fieldname": "column_break_td5pm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "2_markup_on_cost_for_finance",
+   "fieldtype": "Percent",
+   "label": "2% markup on cost for finance"
+  },
+  {
+   "fieldname": "column_break_i2wu6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "_mark_up_on_total_cost",
+   "fieldtype": "Percent",
+   "label": "% Mark up on total cost"
+  },
+  {
+   "fieldname": "section_break_ltzim",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mark_up_on_total_cost",
+   "fieldtype": "Currency",
+   "label": "Mark up on total cost"
+  },
+  {
+   "fieldname": "column_break_sb0f4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_sales_price",
+   "fieldtype": "Currency",
+   "label": "Total Sales Price"
+  },
+  {
+   "fieldname": "column_break_mznah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit price"
+  },
+  {
+   "fieldname": "total_material_cost",
+   "fieldtype": "Currency",
+   "label": "Total Material Cost"
+  },
+  {
+   "fieldname": "labor_cost",
+   "fieldtype": "Currency",
+   "label": "Labor Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "uni_local_x_qty",
+   "fieldtype": "Currency",
+   "label": "Uni Local x qty"
+  },
+  {
+   "fieldname": "unitary_imported_x_qty",
+   "fieldtype": "Currency",
+   "label": "Unitary imported x qty"
+  },
+  {
+   "fieldname": "tranport_cost_x_handling",
+   "fieldtype": "Currency",
+   "label": "tranport cost x handling"
+  },
+  {
+   "fieldname": "duty",
+   "fieldtype": "Currency",
+   "label": "Duty"
+  },
+  {
+   "fieldname": "tmc_x_trans_cost",
+   "fieldtype": "Currency",
+   "label": "tmc x trans cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-24 20:25:22.093406",
+ "modified_by": "Administrator",
+ "module": "Asas",
+ "name": "QPS Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

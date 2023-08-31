@@ -1,0 +1,280 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-10 16:20:51.308661",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_oqx52",
+  "company",
+  "amended_from",
+  "section_break_qdfaq",
+  "customer",
+  "bcd",
+  "column_break_gjbwp",
+  "assigned_division",
+  "asgc_enqno",
+  "date",
+  "brief_work_scope_section",
+  "brief_work_scope",
+  "section_break_36tgw",
+  "detail",
+  "section_break_m807q",
+  "unitary_imported_material_cost_sar",
+  "column_break_qhwvy",
+  "unitary_local_material_cost_sar",
+  "column_break_otcoy",
+  "total_material_cost",
+  "transport_section_section",
+  "transport_cost_sealandair",
+  "column_break_vffxx",
+  "handling",
+  "column_break_vhgi3",
+  "duty",
+  "column_break_bdhbj",
+  "total_transport_cost",
+  "labor_section_section",
+  "total_labor_cost",
+  "sales_price_calculation_section",
+  "total_cost",
+  "total_mark_up_on_total_cost",
+  "column_break_4rwoy",
+  "total_3_mark_up_on_cost_for_contigency",
+  "total_sales_price",
+  "column_break_zag25",
+  "total_2_markup_on_cost_for_finance",
+  "total_unit_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "column_break_oqx52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quotations Estimate Preparation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qdfaq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "bcd",
+   "fieldtype": "Date",
+   "label": "BCD"
+  },
+  {
+   "fieldname": "column_break_gjbwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_division",
+   "fieldtype": "Data",
+   "label": "Assigned Division"
+  },
+  {
+   "fieldname": "asgc_enqno",
+   "fieldtype": "Data",
+   "label": "ASGC ENQ.NO"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "brief_work_scope_section",
+   "fieldtype": "Section Break",
+   "label": "Brief Work Scope"
+  },
+  {
+   "fieldname": "brief_work_scope",
+   "fieldtype": "Text Editor",
+   "label": "Brief Work Scope"
+  },
+  {
+   "fieldname": "section_break_36tgw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Table",
+   "label": "QPS Detail Estimation",
+   "options": "QPS Detail"
+  },
+  {
+   "fieldname": "section_break_m807q",
+   "fieldtype": "Section Break",
+   "label": "Material Section"
+  },
+  {
+   "fieldname": "unitary_imported_material_cost_sar",
+   "fieldtype": "Currency",
+   "label": "Unitary Imported Material Cost (SAR)"
+  },
+  {
+   "fieldname": "column_break_qhwvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unitary_local_material_cost_sar",
+   "fieldtype": "Currency",
+   "label": "Unitary Local Material Cost (SAR)"
+  },
+  {
+   "fieldname": "column_break_otcoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_material_cost",
+   "fieldtype": "Currency",
+   "label": "Total Material Cost"
+  },
+  {
+   "fieldname": "transport_section_section",
+   "fieldtype": "Section Break",
+   "label": "Transport Section"
+  },
+  {
+   "fieldname": "transport_cost_sealandair",
+   "fieldtype": "Currency",
+   "label": "Transport cost (sea/land/air)"
+  },
+  {
+   "fieldname": "column_break_vffxx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handling",
+   "fieldtype": "Currency",
+   "label": "Handling"
+  },
+  {
+   "fieldname": "column_break_vhgi3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bdhbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Total Transport cost"
+  },
+  {
+   "fieldname": "labor_section_section",
+   "fieldtype": "Section Break",
+   "label": "Labor Section"
+  },
+  {
+   "fieldname": "total_labor_cost",
+   "fieldtype": "Currency",
+   "label": "Total Labor Cost"
+  },
+  {
+   "fieldname": "sales_price_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Price Calculation"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "total_mark_up_on_total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Mark up on total cost"
+  },
+  {
+   "fieldname": "column_break_4rwoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_3_mark_up_on_cost_for_contigency",
+   "fieldtype": "Data",
+   "label": "Total 3% mark up on cost for contigency"
+  },
+  {
+   "fieldname": "total_sales_price",
+   "fieldtype": "Currency",
+   "label": "Total Sales Price"
+  },
+  {
+   "fieldname": "column_break_zag25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_2_markup_on_cost_for_finance",
+   "fieldtype": "Data",
+   "label": "Total 2% markup on cost for finance"
+  },
+  {
+   "fieldname": "total_unit_price",
+   "fieldtype": "Currency",
+   "label": "Total Unit price"
+  },
+  {
+   "fieldname": "duty",
+   "fieldtype": "Currency",
+   "label": "Duty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-24 19:34:49.048549",
+ "modified_by": "Administrator",
+ "module": "Asas",
+ "name": "Quotations Estimate Preparation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

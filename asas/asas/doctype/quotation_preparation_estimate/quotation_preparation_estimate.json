@@ -1,0 +1,838 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-25 21:13:04.963816",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_mo4pd",
+  "supplier_quotation_no",
+  "company",
+  "amended_from",
+  "section_break_sdmth",
+  "customer",
+  "supplier",
+  "currency",
+  "conversion_rate",
+  "column_break_pqudi",
+  "customer_name",
+  "supplier_name",
+  "reference",
+  "supplier_reference",
+  "client_ref",
+  "bid_close_date",
+  "section_break_h7pni",
+  "items",
+  "section_break_zejbb",
+  "fob_price",
+  "column_break_hv7gd",
+  "insert_percentage",
+  "column_break_j6jlo",
+  "estimate",
+  "column_break_0a2bq",
+  "actual",
+  "section_break_27mlq",
+  "commission_inc_in_fob_price",
+  "column_break_4azhj",
+  "amount_9",
+  "column_break_uuoh9",
+  "insert_9",
+  "column_break_duk8s",
+  "estimate_9",
+  "column_break_rszc3",
+  "actual_9",
+  "test",
+  "section_break_8nixa",
+  "air_freight_and_packing",
+  "column_break_k08dp",
+  "insert_percentage_1",
+  "column_break_yejhj",
+  "estimate_1",
+  "column_break_26sxs",
+  "actual_1",
+  "section_break_14cno",
+  "insurance",
+  "column_break_mo8ia",
+  "amount",
+  "column_break_e3yjf",
+  "insert_percentage_2",
+  "column_break_0gvbw",
+  "estimate_2",
+  "column_break_pweya",
+  "actual_2",
+  "section_break_kaod6",
+  "transportation_and_port_charges",
+  "column_break_bhvdo",
+  "amount_2",
+  "column_break_kk3ef",
+  "insert_percentage_3",
+  "column_break_sbth7",
+  "estimate_3",
+  "column_break_oujdq",
+  "actual_3",
+  "section_break_owagu",
+  "storage",
+  "column_break_tlkf2",
+  "amount_3",
+  "column_break_lyjep",
+  "insert_percentage_4",
+  "column_break_kgi1w",
+  "estimate_4",
+  "column_break_r6prm",
+  "actual_4",
+  "section_break_sdn8e",
+  "lc_charges",
+  "column_break_nvh9g",
+  "amount_5",
+  "column_break_1vr7v",
+  "insert_percentage_5",
+  "column_break_jong9",
+  "estimate_5",
+  "column_break_arbna",
+  "actual_5",
+  "section_break_agjwe",
+  "zakat",
+  "column_break_7yntc",
+  "amount_6",
+  "column_break_zaaih",
+  "insert_percentage_6",
+  "column_break_7gszw",
+  "estimate_6",
+  "column_break_qcjoc",
+  "actual_6",
+  "section_break_v8pyc",
+  "customs_duty",
+  "column_break_yfgaw",
+  "amount_7",
+  "column_break_aae0w",
+  "insert_percentage_7",
+  "column_break_n8p1s",
+  "estimate_7",
+  "column_break_1il3y",
+  "actual_7",
+  "money_cost_details_section",
+  "money_cost",
+  "column_break_rxh1g",
+  "amount_8",
+  "column_break_a536y",
+  "insert_percentage_8",
+  "est_x_est_1",
+  "column_break_fbmhk",
+  "estimate_8",
+  "column_break_hvdkg",
+  "actual_8",
+  "section_break_exlvw",
+  "column_break_3jpkm",
+  "column_break_ez0os",
+  "total_cost_delivered_price",
+  "section_break_aina0",
+  "mark_up_fob_cif",
+  "column_break_emgsn",
+  "insert_10",
+  "column_break_m2qoa",
+  "estimate_10",
+  "section_break_0u7sk",
+  "total_offered_price",
+  "column_break_xlt1m",
+  "total_offered_price_1",
+  "column_break_iyz0t",
+  "profit_quoted_currency",
+  "column_break_y3gox",
+  "profit"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "column_break_mo4pd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_quotation_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Supplier Quotation No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Quotation Preparation Estimate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_sdmth",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "conversion_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "column_break_pqudi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "supplier_reference",
+   "fieldtype": "Data",
+   "label": "Supplier Reference"
+  },
+  {
+   "fieldname": "client_ref",
+   "fieldtype": "Data",
+   "label": "Client Ref"
+  },
+  {
+   "fieldname": "bid_close_date",
+   "fieldtype": "Date",
+   "label": "Bid Close Date"
+  },
+  {
+   "fieldname": "section_break_h7pni",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_zejbb",
+   "fieldtype": "Section Break",
+   "label": "FOB Price Details"
+  },
+  {
+   "default": "FOB Price",
+   "fieldname": "fob_price",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_hv7gd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insert_percentage",
+   "fieldtype": "Percent",
+   "label": "Insert Percentage"
+  },
+  {
+   "fieldname": "column_break_j6jlo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_0a2bq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_8nixa",
+   "fieldtype": "Section Break",
+   "label": "Air Freight and Packing Details"
+  },
+  {
+   "default": "Air Freight and Packing",
+   "fieldname": "air_freight_and_packing",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_k08dp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insert_percentage_1",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_yejhj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_1",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_26sxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_1",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_14cno",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "default": "Insurance",
+   "fieldname": "insurance",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_mo8ia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_e3yjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_2",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_0gvbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_2",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_pweya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_2",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_kaod6",
+   "fieldtype": "Section Break",
+   "label": "Transportation and Port Charges Details"
+  },
+  {
+   "default": "Transportation and Port Charges",
+   "fieldname": "transportation_and_port_charges",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_bhvdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_2",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_kk3ef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_3",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_sbth7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_3",
+   "fieldtype": "Currency",
+   "label": " Estimate"
+  },
+  {
+   "fieldname": "column_break_oujdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_3",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_owagu",
+   "fieldtype": "Section Break",
+   "label": "Storage Details"
+  },
+  {
+   "default": "Storage",
+   "fieldname": "storage",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_tlkf2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_3",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_lyjep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_4",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_kgi1w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_4",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_r6prm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_4",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_sdn8e",
+   "fieldtype": "Section Break",
+   "label": "LC Charges Details"
+  },
+  {
+   "default": "LC Charges",
+   "fieldname": "lc_charges",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_nvh9g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_5",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_1vr7v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_5",
+   "fieldtype": "Data",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_jong9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_5",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_arbna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_5",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_agjwe",
+   "fieldtype": "Section Break",
+   "label": "Zakat Details"
+  },
+  {
+   "default": "Zakat",
+   "fieldname": "zakat",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_7yntc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_6",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_zaaih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_6",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_7gszw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_6",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_qcjoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_6",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_v8pyc",
+   "fieldtype": "Section Break",
+   "label": "Customs Duty Details"
+  },
+  {
+   "default": "Customs Duty",
+   "fieldname": "customs_duty",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_yfgaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_7",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_aae0w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_percentage_7",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_n8p1s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_7",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_1il3y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_7",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "money_cost_details_section",
+   "fieldtype": "Section Break",
+   "label": "Money Cost Details"
+  },
+  {
+   "default": "Money Cost",
+   "fieldname": "money_cost",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_rxh1g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_8",
+   "fieldtype": "Data",
+   "label": "No of Months"
+  },
+  {
+   "fieldname": "column_break_a536y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "%Per Month",
+   "fieldname": "insert_percentage_8",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "est_x_est_1",
+   "fieldtype": "Data",
+   "label": "Est x Est 1"
+  },
+  {
+   "fieldname": "column_break_fbmhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_8",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_hvdkg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_8",
+   "fieldtype": "Data",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_exlvw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3jpkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ez0os",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_delivered_price",
+   "fieldtype": "Currency",
+   "label": "Total Cost Delivered Price (quoted currency)"
+  },
+  {
+   "fieldname": "section_break_27mlq",
+   "fieldtype": "Section Break",
+   "label": "Commission Inc in FOB Price"
+  },
+  {
+   "default": "Commission Inc in FOB Price",
+   "fieldname": "commission_inc_in_fob_price",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_4azhj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_9",
+   "fieldtype": "Data",
+   "label": "Amount "
+  },
+  {
+   "fieldname": "column_break_uuoh9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Cent",
+   "fieldname": "insert_9",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_duk8s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_9",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "column_break_rszc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_9",
+   "fieldtype": "Currency",
+   "label": "Actual"
+  },
+  {
+   "fieldname": "section_break_aina0",
+   "fieldtype": "Section Break",
+   "label": "Mark-up (FOB+CIF)"
+  },
+  {
+   "default": "Mark-up (FOB+CIF)",
+   "fieldname": "mark_up_fob_cif",
+   "fieldtype": "Data",
+   "label": "Mark-up (FOB+CIF)"
+  },
+  {
+   "fieldname": "column_break_emgsn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Month",
+   "fieldname": "insert_10",
+   "fieldtype": "Percent",
+   "label": "Insert"
+  },
+  {
+   "fieldname": "column_break_m2qoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimate_10",
+   "fieldtype": "Currency",
+   "label": "Estimate"
+  },
+  {
+   "fieldname": "section_break_0u7sk",
+   "fieldtype": "Section Break",
+   "label": "Totals Section"
+  },
+  {
+   "fieldname": "total_offered_price",
+   "fieldtype": "Currency",
+   "label": "Total Offered Price ",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_xlt1m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_offered_price_1",
+   "fieldtype": "Currency",
+   "label": "Total Offered Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_iyz0t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profit_quoted_currency",
+   "fieldtype": "Currency",
+   "label": "Profit (quoted currency)",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_y3gox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Currency",
+   "label": "Profit",
+   "options": "currency"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Quotation Estimation Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "TEST"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Quotation",
+   "link_fieldname": "company"
+  }
+ ],
+ "modified": "2023-08-30 22:14:48.268627",
+ "modified_by": "Administrator",
+ "module": "Asas",
+ "name": "Quotation Preparation Estimate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

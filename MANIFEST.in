@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include asas *.css
+recursive-include asas *.csv
+recursive-include asas *.html
+recursive-include asas *.ico
+recursive-include asas *.js
+recursive-include asas *.json
+recursive-include asas *.md
+recursive-include asas *.png
+recursive-include asas *.py
+recursive-include asas *.svg
+recursive-include asas *.txt
+recursive-exclude asas *.pyc
